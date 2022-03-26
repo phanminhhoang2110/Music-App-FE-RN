@@ -23,4 +23,5 @@ Typography.loadTypographies({
     b12: {fontSize:12, fontFamily: fonts.bold},
     b16: {fontSize:16, fontFamily: fonts.bold},
     b14: {fontSize:14, fontFamily: fonts.bold},
+    b20: {fontSize:20, fontFamily: fonts.bold},
 });

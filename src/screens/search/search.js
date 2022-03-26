@@ -18,43 +18,50 @@ const searchHistory = [
 
 const artist = [
     {
+        'id': 1,
         'name': 'Johnny Scott',
-        'avatar': Assets.images.artist1,
-        'type': 'artist'
+        'avatar': 'artist1',
+        'type': 'Artist'
     },
     {
+        'id': 2,
         'name': 'Hoang Scott',
-        'avatar': Assets.images.artist2,
-        'type': 'artist'
+        'avatar': 'artist2',
+        'type': 'Artist'
     },
     {
+        'id': 3,
         'name': 'Run run run',
-        'avatar': Assets.images.artist1,
-        'type': 'mv',
+        'avatar': 'artist1',
+        'type': 'MV',
         'artist': 'Avinci John'
     },
     {
+        'id': 4,
         'name': 'Rulia and Remé',
-        'avatar': Assets.images.artist2,
-        'type': 'mv',
+        'avatar': 'artist2',
+        'type': 'MV',
         'artist': 'Sunny'
     },
     {
+        'id': 5,
         'name': 'Rommate 01',
-        'avatar': Assets.images.artist3,
-        'type': 'mv',
+        'avatar': 'artist3',
+        'type': 'MV',
         'artist': 'Chain John'
     },
     {
+        'id': 6,
         'name': 'Running on the rain',
-        'avatar': Assets.images.artist4,
-        'type': 'mv',
+        'avatar': 'artist4',
+        'type': 'Song',
         'artist': 'Reena Hook'
     },
     {
+        'id': 7,
         'name': 'Just for what',
-        'avatar': Assets.images.artist5,
-        'type': 'mv',
+        'avatar': 'artist5',
+        'type': 'MV',
         'artist': 'Baemin'
     }
 ]
@@ -89,8 +96,7 @@ const Search = () => {
                     </TouchableOpacity>
                 }
             </View>
-            <History searchHistory={searchHistory}></History>
-            <TabSearch data={artist}></TabSearch>
+            { !search ? <History searchHistory={searchHistory}></History> : <TabSearch data={artist} query={search}></TabSearch> }
         </SafeAreaView>
     );
 }
