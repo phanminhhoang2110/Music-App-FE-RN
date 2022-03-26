@@ -1,8 +1,9 @@
 import React, { useState } from "react";
 import { Keyboard, TextInput, TouchableOpacity } from "react-native";
-import {Text, View, Colors } from "react-native-ui-lib";
-import SearchHistoryItem from "./searh-history-item";
+import {Text, View, Colors, Assets } from "react-native-ui-lib";
 import { SafeAreaView } from 'react-native'
+import History from "./history";
+import TabSearch from "./tab-search";
 
 const searchHistory = [
     {
@@ -14,6 +15,49 @@ const searchHistory = [
         name: 'Good girl'
     }
 ];
+
+const artist = [
+    {
+        'name': 'Johnny Scott',
+        'avatar': Assets.images.artist1,
+        'type': 'artist'
+    },
+    {
+        'name': 'Hoang Scott',
+        'avatar': Assets.images.artist2,
+        'type': 'artist'
+    },
+    {
+        'name': 'Run run run',
+        'avatar': Assets.images.artist1,
+        'type': 'mv',
+        'artist': 'Avinci John'
+    },
+    {
+        'name': 'Rulia and Remé',
+        'avatar': Assets.images.artist2,
+        'type': 'mv',
+        'artist': 'Sunny'
+    },
+    {
+        'name': 'Rommate 01',
+        'avatar': Assets.images.artist3,
+        'type': 'mv',
+        'artist': 'Chain John'
+    },
+    {
+        'name': 'Running on the rain',
+        'avatar': Assets.images.artist4,
+        'type': 'mv',
+        'artist': 'Reena Hook'
+    },
+    {
+        'name': 'Just for what',
+        'avatar': Assets.images.artist5,
+        'type': 'mv',
+        'artist': 'Baemin'
+    }
+]
 
 const Search = () => {
     const [cancel,setCancel] = useState(false);
@@ -45,26 +89,8 @@ const Search = () => {
                     </TouchableOpacity>
                 }
             </View>
-            <View marginL-20 marginT-40 centerV>
-                <Text white title5b>History</Text>
-                <View row marginT-20 style={{flexWrap: 'wrap'}}>
-                    {searchHistory.map((item, index) => {
-                        return (
-                            <SearchHistoryItem key={index} title={item.name}></SearchHistoryItem>
-                        );
-                    })}
-                </View>
-            </View>
-            <View marginL-20 marginT-40 centerV>
-                <Text white title5b>Top Searching</Text>
-                <View row marginT-20 style={{flexWrap: 'wrap'}}>
-                    {searchHistory.map((item, index) => {
-                        return (
-                            <SearchHistoryItem negative={true} key={index} title={item.name}></SearchHistoryItem>
-                        );
-                    })}
-                </View>
-            </View>
+            <History searchHistory={searchHistory}></History>
+            <TabSearch data={artist}></TabSearch>
         </SafeAreaView>
     );
 }

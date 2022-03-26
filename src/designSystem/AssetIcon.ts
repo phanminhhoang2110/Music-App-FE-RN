@@ -63,4 +63,9 @@ Assets.loadAssetsGroup('imgs', {
   dataHome4: require('../assets/icons/dataHome4.png'),
   newAlbum1: require('../assets/icons/newAlbum1.png'),
   newAlbum2: require('../assets/icons/newAlbum2.png'),
+  artist1: require('../assets/icons/artist1.png'),
+  artist2: require('../assets/icons/artist2.png'),
+  artist3: require('../assets/icons/artist3.png'),
+  artist4: require('../assets/icons/artist4.png'),
+  artist5: require('../assets/icons/artist5.png'),
 })

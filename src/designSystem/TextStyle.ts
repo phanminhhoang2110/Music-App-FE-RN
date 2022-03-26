@@ -17,6 +17,7 @@ Typography.loadTypographies({
     r14: {fontSize:14, fontFamily: fonts.regular},
     r12: {fontSize:12, fontFamily: fonts.regular},
     r16: {fontSize:16, fontFamily: fonts.regular},
+    r18: {fontSize:18, fontFamily: fonts.regular},
 
     b11: {fontSize:11, fontFamily: fonts.bold},
     b12: {fontSize:12, fontFamily: fonts.bold},
