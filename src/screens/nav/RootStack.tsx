@@ -8,6 +8,7 @@ import ForgotPassword from '../forgotpassword';
 import Verify from '../verify';
 import MainTab from './MainTab';
 import Search from '../search/search';
+import Player from '../play/play';
 
 export type RootStackParamList = {
   ThroughWalk: undefined,
@@ -16,6 +17,7 @@ export type RootStackParamList = {
   ForgotPassword: undefined,
   Verify: undefined,
   MainTab: undefined,
+  Player: undefined,
   Search: undefined,
 }
 
@@ -24,7 +26,7 @@ const Stack = createNativeStackNavigator<RootStackParamList>();
 const RootStack = () => {
   return (
     <NavigationContainer>
-      <Stack.Navigator initialRouteName='Search'>
+      <Stack.Navigator initialRouteName='Player'>
         <Stack.Screen name="ThroughWalk" component={ThroughWalk} options={{headerShown: false}}/>
         <Stack.Screen name="SignIn" component={SignIn} options={{headerShown: false}}/>
         <Stack.Screen name="SignUp" component={SignUp} options={{headerShown: false}}/>
@@ -48,6 +50,10 @@ const RootStack = () => {
           headerShown: false,
         }}/>
         <Stack.Screen name="Search" component={Search} options={{
+          headerShown: false
+        }}
+        />
+        <Stack.Screen name="Player" component={Player} options={{
           headerShown: false
         }}
         />
