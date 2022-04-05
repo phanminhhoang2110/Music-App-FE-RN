@@ -9,6 +9,7 @@ import Verify from '../verify';
 import MainTab from './MainTab';
 import Search from '../search/search';
 import Player from '../play/play';
+import Home from '../home/index'
 
 export type RootStackParamList = {
   ThroughWalk: undefined,
@@ -19,6 +20,7 @@ export type RootStackParamList = {
   MainTab: undefined,
   Player: undefined,
   Search: undefined,
+  Home: undefined
 }
 
 const Stack = createNativeStackNavigator<RootStackParamList>();
@@ -26,7 +28,7 @@ const Stack = createNativeStackNavigator<RootStackParamList>();
 const RootStack = () => {
   return (
     <NavigationContainer>
-      <Stack.Navigator initialRouteName='Player'>
+      <Stack.Navigator initialRouteName='MainTab'>
         <Stack.Screen name="ThroughWalk" component={ThroughWalk} options={{headerShown: false}}/>
         <Stack.Screen name="SignIn" component={SignIn} options={{headerShown: false}}/>
         <Stack.Screen name="SignUp" component={SignUp} options={{headerShown: false}}/>
@@ -54,6 +56,15 @@ const RootStack = () => {
         }}
         />
         <Stack.Screen name="Player" component={Player} options={{
+          headerBackTitleVisible: false,
+          headerTitle: '',
+          headerTintColor: '#FFF',
+          headerStyle: {
+              backgroundColor: '#0E0B1F'
+          }
+        }}
+        />
+        <Stack.Screen name="Home" component={Home} options={{
           headerShown: false
         }}
         />

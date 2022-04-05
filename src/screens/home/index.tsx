@@ -64,6 +64,8 @@ const dataNewAlbum = [
 ]
 const Home = () => {
     const [loading,setLoading] = React.useState(true);
+    const navigator = useNavigation<NavigationProp<RootStackParamList>>()
+
     return (
         <View flex backgroundColor="#0E0B1F">
             <FlatList
@@ -71,7 +73,7 @@ const Home = () => {
                 data={dataHome}
                 renderItem={({item, index})=>{
                     return (
-                    <TouchableOpacity key={item.id}>
+                    <TouchableOpacity key={item.id} onPress={() => {navigator.navigate('Player')}}>
                         <View row centerV paddingH-24 paddingV-10>
                             <Text white r14>0{index + 1}</Text>
                             <Image source={item.uri} style={{width: 32, height: 32}}  marginH-20/>
