@@ -59,6 +59,12 @@ Assets.loadAssetsGroup('icons', {
   artist3: require('../assets/icons/artist3.png'),
   artist4: require('../assets/icons/artist4.png'),
   artist5: require('../assets/icons/artist5.png'),
+  heart: require('../assets/icons/heart.png'),
+  download: require('../assets/icons/download.png'),
+  next: require('../assets/icons/next.png'),
+  pre: require('../assets/icons/pre.png'),
+  shuffe: require('../assets/icons/shuffe.png'),
+  play: require('../assets/icons/play.png')
 });
 
 Assets.loadAssetsGroup('imgs', {
