@@ -1,4 +1,4 @@
-import React, {useState, useRef} from 'react';
+import React, {useState, useRef, useEffect} from 'react';
 import {
   SafeAreaView,
   Animated,
@@ -12,10 +12,45 @@ import {Image, View, Text} from 'react-native-ui-lib';
 const Player = () => {
   const spinValue = useRef(new Animated.Value(0)).current;
   const [isPlaying, setIsPlaying] = useState(false);
+  var intervalId
 
   const [process, setProcess] = useState(0);
 
   const time = 360 //s
+
+  useEffect(() => {
+    if(isPlaying){
+        if(process >= time){
+            clearInterval(intervalId)
+        }else{
+        intervalId = setInterval(() => {
+            processer()
+        }, 1000)
+        console.log(process)
+        }
+    }
+    return () => {
+        if(intervalId){
+            clearInterval(intervalId)
+        }
+    }
+  })
+
+  const processer = () => {
+    setProcess(process + 1)
+  }
+
+  const converProcessToTime = () => {
+      minute = Math.floor(process/60);
+      second = Math.floor(process%60);
+      if(minute < 10){
+          minute = `0` + minute
+      }
+      if(second < 10){
+        second = `0` + second
+      }
+      return minute + ':' + second
+  } 
 
   const onPlayPress = () => {
     if(!isPlaying){
@@ -38,6 +73,11 @@ const Player = () => {
         setIsPlaying(false)
     }
   };
+
+  const onFastForward = (value) => {
+    forwardTo = Math.floor(value[0]);
+    setProcess(forwardTo)
+  }
 
   return (
     <SafeAreaView style={{backgroundColor: '#0E0B1F', flex: 1}}>
@@ -76,16 +116,17 @@ const Player = () => {
       </View>
       <View marginT-40 marginL-30 marginR-30>
         <Slider
-            value={0}
-            maximumValue={1}
+            value={process}
+            maximumValue={time}
             trackStyle={{height: 1}}
             trackClickable={true}
             thumbTintColor='#CBFB5E'
             thumbStyle={{width:10, height: 10}}
             minimumTrackTintColor='#CBFB5E'
+            onValueChange={(value) => {onFastForward(value)}}
         />
         <View row style={{justifyContent: 'space-between'}}>
-            <Text white>00:00</Text>
+            <Text white>{converProcessToTime()}</Text>
             <Text white>06:00</Text>
         </View>
       </View>
