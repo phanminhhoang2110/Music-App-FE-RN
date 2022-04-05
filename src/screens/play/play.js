@@ -81,6 +81,11 @@ const Player = () => {
 
   return (
     <SafeAreaView style={{backgroundColor: '#0E0B1F', flex: 1}}>
+      <View row style={{alignSelf: 'center', marginBottom: 40}}>
+        <View style={style.dot}></View>
+        <View style={style.seletedDot}></View>
+        <View style={style.dot}></View>
+      </View>
       <Animated.View
         style={{
           transform: [
@@ -181,5 +186,21 @@ const style = StyleSheet.create({
         borderRadius: 100, 
         alignItems:'center', 
         justifyContent: 'center'
+    },
+    dot: {
+      width: 15,
+      height: 4,
+      backgroundColor: 'gray',
+      borderRadius: 3,
+      marginLeft: 5,
+      marginRight: 5
+    },
+    seletedDot: {
+      width: 15,
+      height: 4,
+      backgroundColor: 'white',
+      borderRadius: 3,
+      marginLeft: 5,
+      marginRight: 5
     }
 });
