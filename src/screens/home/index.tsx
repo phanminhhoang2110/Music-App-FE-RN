@@ -89,6 +89,7 @@ const Home = () => {
                     </TouchableOpacity>)
                 }}
                 keyExtractor={item => item.id}
+                key={1}
                 ListHeaderComponent={() => {
                     return (
                         <View>
