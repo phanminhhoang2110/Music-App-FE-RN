@@ -26,11 +26,12 @@ const Player = () => {
         intervalId = setInterval(() => {
             processer()
         }, 1000)
-        console.log(process)
+        console.log('process ' + process)
         }
     }
     return () => {
         if(intervalId){
+            console.log('clear interval ' + intervalId)
             clearInterval(intervalId)
         }
     }
@@ -55,21 +56,25 @@ const Player = () => {
   const onPlayPress = () => {
     if(!isPlaying){
         Animated.loop(
-        Animated.timing(spinValue, {
-            toValue: 1,
-            duration: 3000,
-            easing: Easing.linear,
-            useNativeDriver: true,
-        }),
-        ).start();
+          Animated.timing(spinValue, {
+              toValue: 1,
+              duration: 3000,
+              easing: Easing.linear,
+              useNativeDriver: true,
+          }),
+          ).start();
         setIsPlaying(true)
     }else{
-        Animated.timing(spinValue, {
-            toValue: 0,
-            duration: 1000,
-            easing: Easing.linear,
-            useNativeDriver: true,
-        }).start();
+        // Animated.timing(spinValue, {
+        //     toValue: 0,
+        //     duration: 1000,
+        //     easing: Easing.linear,
+        //     useNativeDriver: true,
+        // }).start();
+        // setIsPlaying(false)
+        Animated.timing(
+          spinValue
+        ).stop();
         setIsPlaying(false)
     }
   };

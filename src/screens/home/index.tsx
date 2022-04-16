@@ -4,6 +4,7 @@ import { Dimensions, Platform } from "react-native";
 import { StyleSheet, FlatList, TouchableOpacity, ScrollView, ImageBackground, ActivityIndicator } from "react-native";
 import { View, Text, Assets, Image } from "react-native-ui-lib";
 import Video from 'react-native-video';
+import VideoPlayer from 'react-native-video-player';
 import { RootStackParamList } from "../nav/RootStack";
 
 const dataHome = [
@@ -153,26 +154,12 @@ const Home = () => {
                                         <Text r12 white marginT-4>Loading</Text>
                                     </View>
                                 }
-                                <Video
-                                    source={{
-                                        uri: 'https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4'
-                                    }}
-                                    style={{
-                                        position: 'absolute',
-                                        top: 0,
-                                        left: 0,
-                                        right: 0,
-                                        bottom: 0,
-                                    }}
-                                    onError={(error) => {
-                                        console.log(error)
-                                    }}
-                                    controls={true}
-                                    poster={'https://baconmockup.com/300/200/'}
-                                    onReadyForDisplay={()=>{
-                                        setLoading(false)
-                                    }}
-                                />
+                                {/* <VideoPlayer
+                                    video={{ uri: 'http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4' }}
+                                    videoWidth={1600}
+                                    videoHeight={900}
+                                    thumbnail={{ uri: 'https://i.picsum.photos/id/866/1600/900.jpg' }}
+                                /> */}
                             </View>
 
                             <View paddingV-20 paddingL-24>
