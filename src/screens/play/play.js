@@ -2,37 +2,37 @@ import React, {useState, useRef, useEffect} from 'react';
 import {
   SafeAreaView,
   Animated,
-  Easing,
   TouchableOpacity,
-  StyleSheet
+  StyleSheet,
+  Dimensions
 } from 'react-native';
 import {Slider} from '@miblanchard/react-native-slider';
 import {Image, View, Text} from 'react-native-ui-lib';
 
 const Player = () => {
+  const width = Dimensions.get('window').width
   const spinValue = useRef(new Animated.Value(0)).current;
   const [isPlaying, setIsPlaying] = useState(false);
-  var intervalId
-
+  var intervalId = useRef();
   const [process, setProcess] = useState(0);
-
-  const time = 360 //s
+  const time = 360
 
   useEffect(() => {
     if(isPlaying){
         if(process >= time){
-            clearInterval(intervalId)
+            clearInterval(intervalId.current)
         }else{
-        intervalId = setInterval(() => {
-            processer()
-        }, 1000)
-        console.log('process ' + process)
+          intervalId.current = setInterval(() => {
+              processer()
+          }, 1000)
         }
+    }else{
+      clearInterval(intervalId.current)
     }
     return () => {
         if(intervalId){
             console.log('clear interval ' + intervalId)
-            clearInterval(intervalId)
+            clearInterval(intervalId.current)
         }
     }
   })
@@ -53,30 +53,24 @@ const Player = () => {
       return minute + ':' + second
   } 
 
-  const onPlayPress = () => {
-    if(!isPlaying){
-        Animated.loop(
-          Animated.timing(spinValue, {
-              toValue: 1,
-              duration: 3000,
-              easing: Easing.linear,
-              useNativeDriver: true,
-          }),
-          ).start();
-        setIsPlaying(true)
-    }else{
-        // Animated.timing(spinValue, {
-        //     toValue: 0,
-        //     duration: 1000,
-        //     easing: Easing.linear,
-        //     useNativeDriver: true,
-        // }).start();
-        // setIsPlaying(false)
-        Animated.timing(
-          spinValue
-        ).stop();
-        setIsPlaying(false)
+  useEffect(()=>{
+    if(isPlaying){
+      Animated.loop(
+        Animated.timing(spinValue, {
+            toValue: 1,
+            duration: 3000,
+            // easing: Easing.linear,
+            useNativeDriver: true,
+        }),
+      ).start();
+
+    } else{
+      spinValue.stopAnimation(({value}) => console.log("Final Value: " + value));
     }
+  },[isPlaying])
+
+  const onPlayPress = () => {
+    setIsPlaying(!isPlaying)
   };
 
   const onFastForward = (value) => {
@@ -85,12 +79,9 @@ const Player = () => {
   }
 
   return (
-    <SafeAreaView style={{backgroundColor: '#0E0B1F', flex: 1}}>
-      <View row style={{alignSelf: 'center', marginBottom: 40}}>
-        <View style={style.dot}></View>
-        <View style={style.seletedDot}></View>
-        <View style={style.dot}></View>
-      </View>
+    <SafeAreaView 
+      style={{backgroundColor: '#0E0B1F', flex: 1, width: width, paddingTop: 70}}
+    >
       <Animated.View
         style={{
           transform: [

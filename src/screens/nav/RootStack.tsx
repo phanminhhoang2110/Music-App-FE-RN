@@ -8,8 +8,8 @@ import ForgotPassword from '../forgotpassword';
 import Verify from '../verify';
 import MainTab from './MainTab';
 import Search from '../search/search';
-import Player from '../play/play';
 import Home from '../home/index'
+import ContainerPlayer from '../play/container-player';
 
 export type RootStackParamList = {
   ThroughWalk: undefined,
@@ -20,7 +20,7 @@ export type RootStackParamList = {
   MainTab: undefined,
   Player: undefined,
   Search: undefined,
-  Home: undefined
+  Home: undefined,
 }
 
 const Stack = createNativeStackNavigator<RootStackParamList>();
@@ -28,7 +28,7 @@ const Stack = createNativeStackNavigator<RootStackParamList>();
 const RootStack = () => {
   return (
     <NavigationContainer>
-      <Stack.Navigator initialRouteName='MainTab'>
+      <Stack.Navigator initialRouteName='Home'>
         <Stack.Screen name="ThroughWalk" component={ThroughWalk} options={{headerShown: false}}/>
         <Stack.Screen name="SignIn" component={SignIn} options={{headerShown: false}}/>
         <Stack.Screen name="SignUp" component={SignUp} options={{headerShown: false}}/>
@@ -55,13 +55,11 @@ const RootStack = () => {
           headerShown: false
         }}
         />
-        <Stack.Screen name="Player" component={Player} options={{
-          headerBackTitleVisible: false,
+        <Stack.Screen name="Player" component={ContainerPlayer} options={{
+          headerBackVisible: true,
           headerTitle: '',
+          headerTransparent: true,
           headerTintColor: '#FFF',
-          headerStyle: {
-              backgroundColor: '#0E0B1F'
-          }
         }}
         />
         <Stack.Screen name="Home" component={Home} options={{
