@@ -59,7 +59,7 @@ const Player = () => {
         Animated.timing(spinValue, {
             toValue: 1,
             duration: 3000,
-            // easing: Easing.linear,
+            //easing: Easing.linear,
             useNativeDriver: true,
         }),
       ).start();
