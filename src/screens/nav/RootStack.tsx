@@ -10,6 +10,7 @@ import MainTab from './MainTab';
 import Search from '../search/search';
 import Home from '../home/index'
 import ContainerPlayer from '../play/container-player';
+import { useSelector } from 'react-redux';
 
 export type RootStackParamList = {
   ThroughWalk: undefined,
@@ -26,9 +27,10 @@ export type RootStackParamList = {
 const Stack = createNativeStackNavigator<RootStackParamList>();
 
 const RootStack = () => {
+  const { isLogin } = useSelector((state : any) => state.login)
   return (
     <NavigationContainer>
-      <Stack.Navigator initialRouteName='SignIn'>
+      <Stack.Navigator initialRouteName={isLogin ? 'MainTab' : 'SignIn'}>
         <Stack.Screen name="ThroughWalk" component={ThroughWalk} options={{headerShown: false}}/>
         <Stack.Screen name="SignIn" component={SignIn} options={{headerShown: false}}/>
         <Stack.Screen name="SignUp" component={SignUp} options={{headerShown: false}}/>

@@ -7,16 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		00E356F31AD99517003FC87E /* MusicAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* MusicAppTests.m */; };
+		00E356F31AD99517003FC87E /* KingOfMusicCTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* KingOfMusicCTests.m */; };
 		13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
-		3403DACB6B7A02E181C1DD25 /* libPods-MusicApp-MusicAppTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E62D771B9F2A923545BF34B /* libPods-MusicApp-MusicAppTests.a */; };
+		3403DACB6B7A02E181C1DD25 /* libPods-KingOfMusicC-KingOfMusicCTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E62D771B9F2A923545BF34B /* libPods-KingOfMusicC-KingOfMusicCTests.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
 		8BDC718FBD224B8898A2937C /* Roboto-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B1D404B8C8F340C18DECE8E9 /* Roboto-Medium.ttf */; };
 		A737783258E048FE93381785 /* Roboto-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BA5776A7682947FEB6AE587F /* Roboto-Regular.ttf */; };
 		E91EEA041F334390B72CC926 /* Roboto-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0413A1DF28724B2D9F9A84BA /* Roboto-Bold.ttf */; };
-		F0EA11F80FF3D1A761F8CF4A /* libPods-MusicApp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B8E8413B11C4716EFA98F1D7 /* libPods-MusicApp.a */; };
+		F0EA11F80FF3D1A761F8CF4A /* libPods-KingOfMusicC.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B8E8413B11C4716EFA98F1D7 /* libPods-KingOfMusicC.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -25,31 +25,31 @@
 			containerPortal = 83CBB9F71A601CBA00E9B192 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 13B07F861A680F5B00A75B9A;
-			remoteInfo = MusicApp;
+			remoteInfo = KingOfMusicC;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		00E356EE1AD99517003FC87E /* MusicAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MusicAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		00E356EE1AD99517003FC87E /* KingOfMusicCTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KingOfMusicCTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		00E356F21AD99517003FC87E /* MusicAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MusicAppTests.m; sourceTree = "<group>"; };
+		00E356F21AD99517003FC87E /* KingOfMusicCTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KingOfMusicCTests.m; sourceTree = "<group>"; };
 		0413A1DF28724B2D9F9A84BA /* Roboto-Bold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Roboto-Bold.ttf"; path = "../src/assets/fonts/Roboto-Bold.ttf"; sourceTree = "<group>"; };
-		13B07F961A680F5B00A75B9A /* MusicApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MusicApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = MusicApp/AppDelegate.h; sourceTree = "<group>"; };
-		13B07FB01A68108700A75B9A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = MusicApp/AppDelegate.m; sourceTree = "<group>"; };
-		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = MusicApp/Images.xcassets; sourceTree = "<group>"; };
-		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = MusicApp/Info.plist; sourceTree = "<group>"; };
-		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = MusicApp/main.m; sourceTree = "<group>"; };
-		7E62D771B9F2A923545BF34B /* libPods-MusicApp-MusicAppTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MusicApp-MusicAppTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = MusicApp/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		A8D337221262AD49CB92A8AE /* Pods-MusicApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MusicApp.release.xcconfig"; path = "Target Support Files/Pods-MusicApp/Pods-MusicApp.release.xcconfig"; sourceTree = "<group>"; };
+		13B07F961A680F5B00A75B9A /* KingOfMusicC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KingOfMusicC.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = KingOfMusicC/AppDelegate.h; sourceTree = "<group>"; };
+		13B07FB01A68108700A75B9A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = KingOfMusicC/AppDelegate.m; sourceTree = "<group>"; };
+		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = KingOfMusicC/Images.xcassets; sourceTree = "<group>"; };
+		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = KingOfMusicC/Info.plist; sourceTree = "<group>"; };
+		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = KingOfMusicC/main.m; sourceTree = "<group>"; };
+		7E62D771B9F2A923545BF34B /* libPods-KingOfMusicC-KingOfMusicCTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-KingOfMusicC-KingOfMusicCTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = KingOfMusicC/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A8D337221262AD49CB92A8AE /* Pods-KingOfMusicC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KingOfMusicC.release.xcconfig"; path = "Target Support Files/Pods-KingOfMusicC/Pods-KingOfMusicC.release.xcconfig"; sourceTree = "<group>"; };
 		B1D404B8C8F340C18DECE8E9 /* Roboto-Medium.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Roboto-Medium.ttf"; path = "../src/assets/fonts/Roboto-Medium.ttf"; sourceTree = "<group>"; };
-		B8E8413B11C4716EFA98F1D7 /* libPods-MusicApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MusicApp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B8E8413B11C4716EFA98F1D7 /* libPods-KingOfMusicC.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-KingOfMusicC.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA5776A7682947FEB6AE587F /* Roboto-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Roboto-Regular.ttf"; path = "../src/assets/fonts/Roboto-Regular.ttf"; sourceTree = "<group>"; };
-		CC322344A49A6ADBA3AF87F2 /* Pods-MusicApp-MusicAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MusicApp-MusicAppTests.debug.xcconfig"; path = "Target Support Files/Pods-MusicApp-MusicAppTests/Pods-MusicApp-MusicAppTests.debug.xcconfig"; sourceTree = "<group>"; };
-		CD546673590258343286EC60 /* Pods-MusicApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MusicApp.debug.xcconfig"; path = "Target Support Files/Pods-MusicApp/Pods-MusicApp.debug.xcconfig"; sourceTree = "<group>"; };
+		CC322344A49A6ADBA3AF87F2 /* Pods-KingOfMusicC-KingOfMusicCTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KingOfMusicC-KingOfMusicCTests.debug.xcconfig"; path = "Target Support Files/Pods-KingOfMusicC-KingOfMusicCTests/Pods-KingOfMusicC-KingOfMusicCTests.debug.xcconfig"; sourceTree = "<group>"; };
+		CD546673590258343286EC60 /* Pods-KingOfMusicC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KingOfMusicC.debug.xcconfig"; path = "Target Support Files/Pods-KingOfMusicC/Pods-KingOfMusicC.debug.xcconfig"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
-		F701415BF6AF5500BC515505 /* Pods-MusicApp-MusicAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MusicApp-MusicAppTests.release.xcconfig"; path = "Target Support Files/Pods-MusicApp-MusicAppTests/Pods-MusicApp-MusicAppTests.release.xcconfig"; sourceTree = "<group>"; };
+		F701415BF6AF5500BC515505 /* Pods-KingOfMusicC-KingOfMusicCTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KingOfMusicC-KingOfMusicCTests.release.xcconfig"; path = "Target Support Files/Pods-KingOfMusicC-KingOfMusicCTests/Pods-KingOfMusicC-KingOfMusicCTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,7 +57,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3403DACB6B7A02E181C1DD25 /* libPods-MusicApp-MusicAppTests.a in Frameworks */,
+				3403DACB6B7A02E181C1DD25 /* libPods-KingOfMusicC-KingOfMusicCTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,20 +65,20 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F0EA11F80FF3D1A761F8CF4A /* libPods-MusicApp.a in Frameworks */,
+				F0EA11F80FF3D1A761F8CF4A /* libPods-KingOfMusicC.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		00E356EF1AD99517003FC87E /* MusicAppTests */ = {
+		00E356EF1AD99517003FC87E /* KingOfMusicCTests */ = {
 			isa = PBXGroup;
 			children = (
-				00E356F21AD99517003FC87E /* MusicAppTests.m */,
+				00E356F21AD99517003FC87E /* KingOfMusicCTests.m */,
 				00E356F01AD99517003FC87E /* Supporting Files */,
 			);
-			path = MusicAppTests;
+			path = KingOfMusicCTests;
 			sourceTree = "<group>";
 		};
 		00E356F01AD99517003FC87E /* Supporting Files */ = {
@@ -89,7 +89,7 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		13B07FAE1A68108700A75B9A /* MusicApp */ = {
+		13B07FAE1A68108700A75B9A /* KingOfMusicC */ = {
 			isa = PBXGroup;
 			children = (
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
@@ -99,15 +99,15 @@
 				81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */,
 				13B07FB71A68108700A75B9A /* main.m */,
 			);
-			name = MusicApp;
+			name = KingOfMusicC;
 			sourceTree = "<group>";
 		};
 		2D16E6871FA4F8E400B85C8A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
-				B8E8413B11C4716EFA98F1D7 /* libPods-MusicApp.a */,
-				7E62D771B9F2A923545BF34B /* libPods-MusicApp-MusicAppTests.a */,
+				B8E8413B11C4716EFA98F1D7 /* libPods-KingOfMusicC.a */,
+				7E62D771B9F2A923545BF34B /* libPods-KingOfMusicC-KingOfMusicCTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -122,9 +122,9 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
-				13B07FAE1A68108700A75B9A /* MusicApp */,
+				13B07FAE1A68108700A75B9A /* KingOfMusicC */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
-				00E356EF1AD99517003FC87E /* MusicAppTests */,
+				00E356EF1AD99517003FC87E /* KingOfMusicCTests */,
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				A2F0B474BD8572AA25AFF8C4 /* Pods */,
@@ -138,8 +138,8 @@
 		83CBBA001A601CBA00E9B192 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				13B07F961A680F5B00A75B9A /* MusicApp.app */,
-				00E356EE1AD99517003FC87E /* MusicAppTests.xctest */,
+				13B07F961A680F5B00A75B9A /* KingOfMusicC.app */,
+				00E356EE1AD99517003FC87E /* KingOfMusicCTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -147,10 +147,10 @@
 		A2F0B474BD8572AA25AFF8C4 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				CD546673590258343286EC60 /* Pods-MusicApp.debug.xcconfig */,
-				A8D337221262AD49CB92A8AE /* Pods-MusicApp.release.xcconfig */,
-				CC322344A49A6ADBA3AF87F2 /* Pods-MusicApp-MusicAppTests.debug.xcconfig */,
-				F701415BF6AF5500BC515505 /* Pods-MusicApp-MusicAppTests.release.xcconfig */,
+				CD546673590258343286EC60 /* Pods-KingOfMusicC.debug.xcconfig */,
+				A8D337221262AD49CB92A8AE /* Pods-KingOfMusicC.release.xcconfig */,
+				CC322344A49A6ADBA3AF87F2 /* Pods-KingOfMusicC-KingOfMusicCTests.debug.xcconfig */,
+				F701415BF6AF5500BC515505 /* Pods-KingOfMusicC-KingOfMusicCTests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -168,9 +168,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		00E356ED1AD99517003FC87E /* MusicAppTests */ = {
+		00E356ED1AD99517003FC87E /* KingOfMusicCTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "MusicAppTests" */;
+			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "KingOfMusicCTests" */;
 			buildPhases = (
 				203C51D5585949FA506F46AD /* [CP] Check Pods Manifest.lock */,
 				00E356EA1AD99517003FC87E /* Sources */,
@@ -184,14 +184,14 @@
 			dependencies = (
 				00E356F51AD99517003FC87E /* PBXTargetDependency */,
 			);
-			name = MusicAppTests;
-			productName = MusicAppTests;
-			productReference = 00E356EE1AD99517003FC87E /* MusicAppTests.xctest */;
+			name = KingOfMusicCTests;
+			productName = KingOfMusicCTests;
+			productReference = 00E356EE1AD99517003FC87E /* KingOfMusicCTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		13B07F861A680F5B00A75B9A /* MusicApp */ = {
+		13B07F861A680F5B00A75B9A /* KingOfMusicC */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "MusicApp" */;
+			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "KingOfMusicC" */;
 			buildPhases = (
 				E1C8266FFE85D41EE59B7FA1 /* [CP] Check Pods Manifest.lock */,
 				FD10A7F022414F080027D42C /* Start Packager */,
@@ -206,9 +206,9 @@
 			);
 			dependencies = (
 			);
-			name = MusicApp;
-			productName = MusicApp;
-			productReference = 13B07F961A680F5B00A75B9A /* MusicApp.app */;
+			name = KingOfMusicC;
+			productName = KingOfMusicC;
+			productReference = 13B07F961A680F5B00A75B9A /* KingOfMusicC.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -228,7 +228,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "MusicApp" */;
+			buildConfigurationList = 83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "KingOfMusicC" */;
 			compatibilityVersion = "Xcode 12.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -241,8 +241,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				13B07F861A680F5B00A75B9A /* MusicApp */,
-				00E356ED1AD99517003FC87E /* MusicAppTests */,
+				13B07F861A680F5B00A75B9A /* KingOfMusicC */,
+				00E356ED1AD99517003FC87E /* KingOfMusicCTests */,
 			);
 		};
 /* End PBXProject section */
@@ -290,15 +290,15 @@
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-MusicApp-MusicAppTests/Pods-MusicApp-MusicAppTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-KingOfMusicC-KingOfMusicCTests/Pods-KingOfMusicC-KingOfMusicCTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-MusicApp-MusicAppTests/Pods-MusicApp-MusicAppTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-KingOfMusicC-KingOfMusicCTests/Pods-KingOfMusicC-KingOfMusicCTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MusicApp-MusicAppTests/Pods-MusicApp-MusicAppTests-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-KingOfMusicC-KingOfMusicCTests/Pods-KingOfMusicC-KingOfMusicCTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		203C51D5585949FA506F46AD /* [CP] Check Pods Manifest.lock */ = {
@@ -316,7 +316,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-MusicApp-MusicAppTests-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-KingOfMusicC-KingOfMusicCTests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -329,15 +329,15 @@
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-MusicApp/Pods-MusicApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-KingOfMusicC/Pods-KingOfMusicC-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-MusicApp/Pods-MusicApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-KingOfMusicC/Pods-KingOfMusicC-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MusicApp/Pods-MusicApp-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-KingOfMusicC/Pods-KingOfMusicC-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		84D2900F4F6C7D3F0FF30FAD /* [CP] Copy Pods Resources */ = {
@@ -346,15 +346,15 @@
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-MusicApp-MusicAppTests/Pods-MusicApp-MusicAppTests-resources-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-KingOfMusicC-KingOfMusicCTests/Pods-KingOfMusicC-KingOfMusicCTests-resources-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-MusicApp-MusicAppTests/Pods-MusicApp-MusicAppTests-resources-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-KingOfMusicC-KingOfMusicCTests/Pods-KingOfMusicC-KingOfMusicCTests-resources-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MusicApp-MusicAppTests/Pods-MusicApp-MusicAppTests-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-KingOfMusicC-KingOfMusicCTests/Pods-KingOfMusicC-KingOfMusicCTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		909EB1748EE9C9F2EB38130B /* [CP] Copy Pods Resources */ = {
@@ -363,15 +363,15 @@
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-MusicApp/Pods-MusicApp-resources-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-KingOfMusicC/Pods-KingOfMusicC-resources-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-MusicApp/Pods-MusicApp-resources-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-KingOfMusicC/Pods-KingOfMusicC-resources-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MusicApp/Pods-MusicApp-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-KingOfMusicC/Pods-KingOfMusicC-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		E1C8266FFE85D41EE59B7FA1 /* [CP] Check Pods Manifest.lock */ = {
@@ -389,7 +389,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-MusicApp-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-KingOfMusicC-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -422,7 +422,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				00E356F31AD99517003FC87E /* MusicAppTests.m in Sources */,
+				00E356F31AD99517003FC87E /* KingOfMusicCTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -440,7 +440,7 @@
 /* Begin PBXTargetDependency section */
 		00E356F51AD99517003FC87E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 13B07F861A680F5B00A75B9A /* MusicApp */;
+			target = 13B07F861A680F5B00A75B9A /* KingOfMusicC */;
 			targetProxy = 00E356F41AD99517003FC87E /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -448,14 +448,14 @@
 /* Begin XCBuildConfiguration section */
 		00E356F61AD99517003FC87E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CC322344A49A6ADBA3AF87F2 /* Pods-MusicApp-MusicAppTests.debug.xcconfig */;
+			baseConfigurationReference = CC322344A49A6ADBA3AF87F2 /* Pods-KingOfMusicC-KingOfMusicCTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = MusicAppTests/Info.plist;
+				INFOPLIST_FILE = KingOfMusicCTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -469,17 +469,17 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MusicApp.app/MusicApp";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KingOfMusicC.app/KingOfMusicC";
 			};
 			name = Debug;
 		};
 		00E356F71AD99517003FC87E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F701415BF6AF5500BC515505 /* Pods-MusicApp-MusicAppTests.release.xcconfig */;
+			baseConfigurationReference = F701415BF6AF5500BC515505 /* Pods-KingOfMusicC-KingOfMusicCTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
-				INFOPLIST_FILE = MusicAppTests/Info.plist;
+				INFOPLIST_FILE = KingOfMusicCTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -493,20 +493,20 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MusicApp.app/MusicApp";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KingOfMusicC.app/KingOfMusicC";
 			};
 			name = Release;
 		};
 		13B07F941A680F5B00A75B9A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CD546673590258343286EC60 /* Pods-MusicApp.debug.xcconfig */;
+			baseConfigurationReference = CD546673590258343286EC60 /* Pods-KingOfMusicC.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = V5LQV2A39D;
 				ENABLE_BITCODE = NO;
-				INFOPLIST_FILE = MusicApp/Info.plist;
+				INFOPLIST_FILE = KingOfMusicC/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -517,7 +517,7 @@
 					"-lc++",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = MusicApp;
+				PRODUCT_NAME = KingOfMusicC;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -526,13 +526,13 @@
 		};
 		13B07F951A680F5B00A75B9A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A8D337221262AD49CB92A8AE /* Pods-MusicApp.release.xcconfig */;
+			baseConfigurationReference = A8D337221262AD49CB92A8AE /* Pods-KingOfMusicC.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = V5LQV2A39D;
-				INFOPLIST_FILE = MusicApp/Info.plist;
+				INFOPLIST_FILE = KingOfMusicC/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -543,7 +543,7 @@
 					"-lc++",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = MusicApp;
+				PRODUCT_NAME = KingOfMusicC;
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
@@ -675,7 +675,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "MusicAppTests" */ = {
+		00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "KingOfMusicCTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				00E356F61AD99517003FC87E /* Debug */,
@@ -684,7 +684,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "MusicApp" */ = {
+		13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "KingOfMusicC" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				13B07F941A680F5B00A75B9A /* Debug */,
@@ -693,7 +693,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "MusicApp" */ = {
+		83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "KingOfMusicC" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				83CBBA201A601CBA00E9B192 /* Debug */,

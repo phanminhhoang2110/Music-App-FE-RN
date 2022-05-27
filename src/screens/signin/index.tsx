@@ -1,14 +1,28 @@
 import { NavigationProp, useNavigation } from "@react-navigation/native";
-import React from "react";
-import { ImageBackground, StyleSheet, TextInput } from "react-native";
+import React, { useEffect, useState } from "react";
+import { Alert, ImageBackground, StyleSheet, TextInput } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 import { Text, View, Assets, Colors, Image, TouchableOpacity, Typography, Button} from "react-native-ui-lib";
+import { useSelector, useDispatch } from "react-redux";
 import Input from "../../components/TextField/input";
 import InputPassword from "../../components/TextPasswordField/input";
+import { login } from "../../redux/slices/login.slice";
 import { RootStackParamList } from "../nav/RootStack";
 
 const SignIn = () => {
     const navigation = useNavigation<NavigationProp<RootStackParamList>>();
+    const [mail, setMail] = useState('')
+    const [pass, setPass] = useState('')
+    const {isLogin} = useSelector((state: any) => state.login)
+    const dispatch = useDispatch()
+
+    const loginPress = () => {
+        if(!mail || !pass){
+            Alert.alert('Login', 'Vui lòng đăng nhập !')
+        }
+        dispatch(login({username: mail}))
+        navigation.navigate('MainTab')
+    }
     return (
         <View flex>
             <ImageBackground 
@@ -19,8 +33,8 @@ const SignIn = () => {
                     <Text white title2b marginL-40>SIGN IN</Text>                    
                 </View>
 
-                <Input iconLeft={'email'} placeHolder={'E-mail'} keyboardType='default'></Input>
-                <InputPassword iconLeft={'password'} placeHolder={'Password'} ></InputPassword>
+                <Input {...{value: mail, onChangeText: setMail}} iconLeft={'email'} placeHolder={'E-mail'} keyboardType='default'></Input>
+                <InputPassword {...{value: pass, onChangeText: setPass}}  iconLeft={'password'} placeHolder={'Password'} ></InputPassword>
                 <Text
                     white
                     r14
@@ -35,7 +49,7 @@ const SignIn = () => {
                             backgroundColor={Colors.primary} 
                             color={Colors.n3}
                             labelStyle={Typography.b16}
-                            onPress={() => {navigation.navigate('MainTab')}}
+                            onPress={loginPress}
                         />
                 </View>
                 <View flex-1></View>

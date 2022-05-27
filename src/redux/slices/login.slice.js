@@ -9,12 +9,12 @@ const loginSlice = createSlice({
     reducers: {
         login: (state, action) => {
             state.username = action.payload.username
-            isLogin = true
+            state.isLogin = true
         }
     }
 })
 
-export const {login} = loginSlice.actions
 
+export const {login} = loginSlice.actions
 export default loginSlice.reducer
 

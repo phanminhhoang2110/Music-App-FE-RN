@@ -6,9 +6,11 @@ interface Props {
     iconLeft: string 
     placeHolder: string,
     keyboardType: string,
+    value?: string,
+    onChangeText?: any
 }
 
-const Input = ({iconLeft, placeHolder, keyboardType = "default"} : Props) => {
+const Input = ({iconLeft, placeHolder,value, onChangeText ,keyboardType = "default"} : Props) => {
     return (
         <View style={styles.container}>
             <View width={24} height={24} center margin-16>
@@ -19,6 +21,7 @@ const Input = ({iconLeft, placeHolder, keyboardType = "default"} : Props) => {
                 placeholder={placeHolder}
                 placeholderTextColor={'#9F9F9F'}
                 style={styles.input}
+                {...{value, onChangeText}}
             />
         </View>
     );

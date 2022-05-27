@@ -11,7 +11,7 @@ public class MainActivity extends ReactActivity {
    */
   @Override
   protected String getMainComponentName() {
-    return "MusicApp";
+    return "KingOfMusic";
   }
   @Override
   protected void onCreate(Bundle savedInstanceState){

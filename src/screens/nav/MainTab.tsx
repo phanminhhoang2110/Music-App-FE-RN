@@ -8,6 +8,7 @@ import Account from '../account';
 import Radio from '../radio';
 import { Image, Colors, Assets, TouchableOpacity} from 'react-native-ui-lib';
 import { RootStackParamList } from './RootStack';
+import { useSelector } from 'react-redux';
 
 const Tab = createBottomTabNavigator();
 
@@ -29,7 +30,7 @@ const AddIcon = ({children, onPress}) => {
 
 export default function MainTab() {
   const navigator = useNavigation<NavigationProp<RootStackParamList>>()
-
+  const state = useSelector(state => state)
   const onPressSearch = () => {
     navigator.navigate('Search')
   }

@@ -5,9 +5,11 @@ import { Text, View, Assets, Colors, Image, TouchableOpacity} from "react-native
 interface Props {
     iconLeft: string 
     placeHolder: string
+    value?: string
+    onChangeText?: any
 }
 
-const InputPassword = ({iconLeft, placeHolder} : Props) => {
+const InputPassword = ({iconLeft, placeHolder, value, onChangeText} : Props) => {
     const [show, setShow] = React.useState<boolean>(true);
 
     return (
@@ -20,6 +22,7 @@ const InputPassword = ({iconLeft, placeHolder} : Props) => {
                 placeholder={placeHolder}
                 placeholderTextColor={'#9F9F9F'}
                 style={{fontSize: 14, color: Colors.white, flex: 1}}
+                {...{value, onChangeText}}
             />
             <TouchableOpacity style={{height: 24, width: 24}} paddingT-30 center onPressIn={() => {setShow(false)}} onPressOut={() => {setShow(true)}}>
                 <Image source={Assets.icons['eye']}/>
